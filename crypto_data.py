@@ -101,13 +101,13 @@ def write_data_to_file(filename, cur, conn):
             top10Coins.append((top100Coins[i][1], top100Coins[i][3], top100Coins[i][2]))
 
         outFile.write("        Top 5 Cryptocurrency Market Caps (USD)        \n")
-        outFile.write("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n\n")
+        outFile.write("-====================================================-\n\n")
         for i in range(5):
             outFile.write("#{}: {} (${})\n".format(i + 1, top10Coins[i][0], top10Coins[i][1]))
         outFile.write("\n\n")
 
         outFile.write("        Top 10 Cryptocurrency Coin Prices (USD)       \n")
-        outFile.write("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n\n")
+        outFile.write("-====================================================-\n\n")
         for i in range(10):
             outFile.write("#{}: {} (${})\n".format(i + 1, top10Coins[i][0], top10Coins[i][2]))
 

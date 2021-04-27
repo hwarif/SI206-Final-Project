@@ -88,7 +88,7 @@ def write_data_to_file(filename, cur, conn):
 
         outFile = open(path + filename, "w")
         outFile.write("Average % Price Change of the Top 100 Cryptocurrencies\n")
-        outFile.write("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n\n")
+        outFile.write("-====================================================-\n\n")
         avgCryptoChange = (getAvgChange(cur, conn))
         # This line rounds the average popularity to one decimal place.
         avgCrypto = round(avgCryptoChange, 4)
